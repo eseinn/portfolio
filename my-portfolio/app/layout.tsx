@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const NavItem = ({ children }: PropsWithChildren) => (
-  <div className="mx-10 hover:text-blue-900 text-white hover:bg-gray-300 p-2 rounded-4xl transition-all">
+  <div className="mx-10 hover:text-gray-600 text-white hover:bg-gray-300 p-2 rounded-4xl transition-all">
     {children}
   </div>
 );
@@ -39,8 +39,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={"grid bg-blue-900 max-w-[1200px] p-10 mx-auto text-white"}
+        className={"grid bg-[#112D4E] max-w-[1200px] p-10 mx-auto text-white "}
       >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-transparent to-black/50 -z-10"></div>
         <NavBar>
           <Link href="/projects" className="">
             <NavItem>Projects</NavItem>
