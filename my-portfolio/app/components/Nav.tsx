@@ -16,7 +16,7 @@ const NavItem = ({
   onClick?: () => void;
 }>) => (
   <div
-    onClick={() => onClick()}
+    onClick={() => onClick && onClick()}
     className="mx-10 text-inherit p-2 rounded-4xl transition-all"
   >
     {children}
@@ -96,8 +96,8 @@ const Nav = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
-    <div className="fixed top-5">
-      <div className="bg-black w-fit hidden md:flex font-bold m-auto ">
+    <div className="fixed top-5 left-0 w-full">
+      <div className="bg-black justify-center hidden md:flex font-bold m-auto ">
         <NavItems />
       </div>
       <button
