@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import { Element } from "react-scroll";
 
 const Section = ({ children, id }: PropsWithChildren<{ id: string }>) => (
-  <Element className="h-screen p-4 my-10" name={id}>
+  <Element className="h-screen p-4 " name={id}>
     {children}
   </Element>
 );

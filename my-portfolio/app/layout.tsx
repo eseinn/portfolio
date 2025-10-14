@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Layout from "./components/Layout";
+import Nav from "./components//Nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,10 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={"grid bg-[#112D4E] max-w-[1200px] p-10 mx-auto text-white "}
+        className={"grid bg-[#112D4E] max-w-[1200px] px-10 mx-auto text-white "}
       >
-        <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-black/100 to-black/20 -z-10"></div>
-        <Layout />
+        <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-black/100 to-black/20 -z-10" />
+        <Nav />
+
         {children}
       </body>
     </html>
