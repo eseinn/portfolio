@@ -64,12 +64,12 @@ const NavItems = ({ onClick }: { onClick?: () => void }) => (
 );
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const closeMenu = () => setIsOpen(false);
 
   useEffect(() => {
     const handleClickOutside = (e: Event) => {
-      if (menuRef.current && !menuRef.current.contains(e.target)) {
+      if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
         setIsOpen(false);
       }
     };
