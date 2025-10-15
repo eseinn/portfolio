@@ -39,7 +39,7 @@ const Item = ({
       smooth
       duration={400}
       to={name}
-      className="cursor-pointer"
+      className="cursor-pointer w-fit"
     >
       <NavItem onClick={onClick}>{children}</NavItem>
     </Link>
@@ -108,7 +108,7 @@ const Nav = () => {
       </button>
       {isOpen && (
         <div
-          className="fixed text-lg top-0 right-0 w-full h-full bg-[#F9F7F7] pt-6 pr-6 flex flex-col animate-slideIn text-black"
+          className="fixed items-center text-2xl top-0 right-0 w-full h-full bg-[#F9F7F7] pt-6 pr-6 flex flex-col text-black"
           ref={menuRef}
         >
           <button
