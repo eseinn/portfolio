@@ -30,7 +30,7 @@ export default function RootLayout({
           "grid bg-[#112D4E] max-w-[1200px] px-10 mx-auto text-[#DBE2EF] "
         }
       >
-        <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-black/30 via-black/90 to-black/30 -z-10" />
+        <div className="fixed top-0 left-0 w-full h-full bg-gradient-to-b from-black/50 via-black/90 to-black/50 -z-10" />
         <Nav />
 
         {children}
