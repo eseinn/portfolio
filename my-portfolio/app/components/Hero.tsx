@@ -31,7 +31,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="m-auto">
+        <div className="sm:m-auto flex flex-col sm:items-center">
           <Image
             src="/Einar_1.png"
             alt="hero image"
@@ -39,6 +39,10 @@ const Hero = () => {
             width={200}
             height={300}
           />
+          <div className="border-2 p-4 rounded-xl mt-4 text-center">
+            <div className=" text-4xl">8+ years</div>{" "}
+            <div className="text-sm">experience in Web Development</div>
+          </div>
         </div>
       </div>
     </>
