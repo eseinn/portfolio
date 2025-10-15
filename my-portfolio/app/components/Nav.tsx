@@ -96,19 +96,19 @@ const Nav = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
-    <div className="fixed top-5 left-0 w-full">
-      <div className="bg-black justify-center hidden md:flex font-bold m-auto ">
+    <div className="fixed left-0 w-full">
+      <div className="bg-[#112D4E] py-2 justify-center hidden sm:flex font-bold m-auto border-b-1">
         <NavItems />
       </div>
       <button
         onClick={toggleMenu}
-        className="md:hidden p-2 focus:outline-none cursor-pointer fixed right-4 top-4"
+        className="sm:hidden p-2 focus:outline-none cursor-pointer fixed right-4 top-4"
       >
         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
       {isOpen && (
         <div
-          className="fixed text-lg top-0 right-0 sm:w-[200px] w-full h-full bg-[#F9F7F7] pt-6 pr-6 flex flex-col animate-slideIn text-black"
+          className="fixed text-lg top-0 right-0 w-full h-full bg-[#F9F7F7] pt-6 pr-6 flex flex-col animate-slideIn text-black"
           ref={menuRef}
         >
           <button
