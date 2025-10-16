@@ -1,7 +1,9 @@
+import { H2 } from '@/app/Components';
+
 const About = () => {
   return (
-    <div className="text-xl font-semibold leading-8">
-      <h2 className="text-4xl mb-10 text-center">About me</h2>
+    <div className='sm:text-xl text-md font-semibold leading-8'>
+      <H2>About me</H2>
       <p>
         I graduated from the University of Iceland in 2014 with Bsc in Computer
         Science (Fun fact: I also finished a Bsc degree in Engineering at the

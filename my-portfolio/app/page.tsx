@@ -1,4 +1,4 @@
-import Sections from "./components/Section";
+import Sections from './Sections/Section';
 
 export default function Home() {
   return (
