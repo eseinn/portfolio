@@ -146,7 +146,13 @@ const Projects = () => {
           "Node.js",
           "Bitbucket",
         ]}
-        description=""
+        description={
+          <Description>
+            <p></p>
+            <p></p>
+            <p></p>
+          </Description>
+        }
         link="https://ossur.com"
       />
       <Project
@@ -161,7 +167,13 @@ const Projects = () => {
           "Vercel",
           "Sequel Ace",
         ]}
-        description=""
+        description={
+          <Description>
+            <p></p>
+            <p></p>
+            <p></p>
+          </Description>
+        }
         link="https://alfred.is"
       />
       <Project
@@ -174,7 +186,13 @@ const Projects = () => {
           "MongoDB",
           "Cloudflare",
         ]}
-        description=""
+        description={
+          <Description>
+            <p></p>
+            <p></p>
+            <p></p>
+          </Description>
+        }
         link="https://veiditorg.is"
       />
     </>

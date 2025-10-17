@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <H1>Welcome to my portfolio</H1>
-      <div className="flex justify-between flex-col sm:flex-row m-auto">
+      <div className="flex justify-between flex-col sm:flex-row m-auto gap-8">
         <div className="m-auto space-y-2 sm:space-y-4">
           <div className="sm:text-4xl text-2xl">Hi!</div>
           <div>
@@ -30,13 +30,13 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="sm:m-auto flex flex-col sm:items-center">
+        <div className="flex flex-col items-center ">
           <Image
-            src="/Einar_1.png"
+            src="/Einar.png"
             alt="hero image"
             className="rounded-xl"
-            width={200}
             height={300}
+            width={300}
           />
           <div className="border-2 p-4 space-y-2 rounded-xl mt-4 text-center">
             <div className=" text-4xl text-nowrap">8+ years</div>{" "}
