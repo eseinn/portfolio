@@ -15,12 +15,14 @@ const NavItem = ({
 }: PropsWithChildren<{
   onClick?: () => void;
 }>) => (
-  <div
+  <button
+    role='button'
     onClick={() => onClick && onClick()}
-    className='mx-10 text-inherit p-2 rounded-4xl transition-all'
+    className='mx-10 cursor-pointer text-inherit p-2 rounded-4xl transition-all '
+    style={{ textDecoration: 'inherit' }}
   >
     {children}
-  </div>
+  </button>
 );
 
 const Item = ({
@@ -34,7 +36,6 @@ const Item = ({
   return (
     <Link
       spy
-      tabIndex={0}
       activeClass='underline' // highlight active link
       smooth
       duration={400}
