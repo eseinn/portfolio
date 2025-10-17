@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col items-center ">
           <Image
-            src="/Einar.png"
+            src="/Einar_2.png"
             alt="hero image"
             className="rounded-xl"
             height={300}
