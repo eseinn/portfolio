@@ -1,5 +1,7 @@
 import { H2 } from "@/app/Components";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import type { PropsWithChildren, ReactNode } from "react";
@@ -24,7 +26,7 @@ const Project = ({
   return (
     <div className="flex my-40 rounded-xl">
       <div className="space-y-5">
-        <div className="text-4xl">{name}</div>
+        <div className="sm:text-3xl text-2xl font-bold">{name}</div>
         <div className="flex flex-wrap gap-4">
           {technologies.map((tech, key) => (
             <div className="bg-[#112D4E] px-4 py-2 rounded-full" key={key}>

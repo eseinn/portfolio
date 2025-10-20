@@ -8,10 +8,10 @@ const Hero = () => {
       <H1>Welcome to my portfolio</H1>
       <div className="flex justify-between flex-col sm:flex-row m-auto gap-8">
         <div className="m-auto space-y-2 sm:space-y-4">
-          <div className="sm:text-4xl text-2xl">Hi!</div>
+          <div className="sm:text-4xl text-xl">Hi!</div>
           <div>
             I´m
-            <span className="font-bold text-2xl"> Einar Smári Einarsson</span>
+            <span className="font-bold text-xl"> Einar</span>
           </div>
           <div>
             An experienced <span className="">Full Stack Web Developer</span>{" "}
@@ -35,11 +35,11 @@ const Hero = () => {
             src="/Einar_2.png"
             alt="hero image"
             className="rounded-xl"
-            height={300}
-            width={300}
+            height={250}
+            width={250}
           />
           <div className="border-2 p-4 space-y-2 rounded-xl mt-4 text-center">
-            <div className=" text-4xl text-nowrap">8+ years</div>{" "}
+            <div className=" text-xl font-bold text-nowrap">8+ years</div>{" "}
             <div className="text-sm">Experience in Web Development</div>
           </div>
         </div>
