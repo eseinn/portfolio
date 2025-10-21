@@ -201,15 +201,19 @@ const Projects = () => {
               has become the biggest (online) job market in Iceland. It also
               operates in a few other European countries.
             </Paragraph>
-            At Alfreð I worked on developing and maintaining the web by adding
-            new features and fixing bugs that came up. There is a public web
-            (alfred.is) and an admin web that are both written in React with
-            Typescript and Tailwind CSS. On top of that the public web runs on
-            Next.js - the public web itself is probably the single biggest task
-            I did at Alfreð where I took a large part in migrating it from an
-            older technology (written in Ember.js) to its current version. Other
-            notable tasks I worked on independently or as a part of a team:
-            <ul className='list-disc ml-4 leading-8'>
+            <Paragraph>
+              {' '}
+              At Alfreð I worked on developing and maintaining the web by adding
+              new features and fixing bugs that came up. There is a public web
+              (alfred.is) and an admin web that are both written in React with
+              Typescript and Tailwind CSS. On top of that the public web runs on
+              Next.js - the public web itself is probably the single biggest
+              task I did at Alfreð where I took a large part in migrating it
+              from an older technology (written in Ember.js) to its current
+              version. Other notable tasks I worked on independently or as a
+              part of a team:
+            </Paragraph>
+            <ul className='list-disc ml-4 mb-2'>
               <li>A complete redesign of the Admin web</li>
               <li>
                 An integration of a third party web service to the Courses part

@@ -25,6 +25,15 @@ export const Section = ({
   </Element>
 );
 
-export const Paragraph = ({ children }: PropsWithChildren) => (
-  <p className='text-justify'>{children}</p>
+export const Paragraph = ({
+  children,
+  large,
+}: PropsWithChildren<{ large?: boolean }>) => (
+  <p
+    className={`sm:text-justify text-left ${
+      large ? `sm:text-xl text-lg` : `sm:text-lg text-md`
+    }`}
+  >
+    {children}
+  </p>
 );
